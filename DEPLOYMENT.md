@@ -38,6 +38,8 @@ Le fichier `render.yaml` configure automatiquement :
 Une fois déployé, l'application sera accessible à une URL du type :
 `https://[nom-choisi].onrender.com`
 
+**Exemple de cette application** : https://weather-app-09ct.onrender.com
+
 ## Vérifications avant déploiement
 
 ✅ **Clé API configurée** : Remplacer `YOUR_API_KEY_HERE` par votre vraie clé
