@@ -1,0 +1,27 @@
+{
+  "name": "weather-app-lamine",
+  "version": "1.0.0",
+  "description": "Application météo utilisant l'API OpenWeather",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Site statique prêt'",
+    "build": "echo 'Aucun build requis'"
+  },
+  "keywords": [
+    "weather",
+    "api",
+    "vanilla-javascript",
+    "openweather",
+    "html",
+    "css",
+    "fetch",
+    "web-app"
+  ],
+  "author": "Lamine",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lineuae/weather-app.git"
+  },
+  "homepage": "https://weather-app-lamine.onrender.com"
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Tableau de Bord Météo</h1>
+            <p class="subtitle">Consultez la météo de n'importe quelle ville</p>
+        </header>
+
+        <main>
+            <!-- Section de recherche -->
+            <section class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="cityInput" 
+                        placeholder="Entrez le nom d'une ville..."
+                        autocomplete="off"
+                    >
+                    <button id="searchBtn" class="btn-search">
+                        🔍 Rechercher
+                    </button>
+                </div>
+                <div id="suggestions" class="suggestions hidden"></div>
+            </section>
+
+            <!-- Zone d'affichage météo -->
+            <section class="weather-section">
+                <div id="loadingState" class="loading-state hidden">
+                    <div class="spinner"></div>
+                    <p>Chargement des données météo...</p>
+                </div>
+
+                <div id="errorState" class="error-state hidden">
+                    <div class="error-icon">❌</div>
+                    <h3 id="errorTitle">Erreur</h3>
+                    <p id="errorMessage">Une erreur est survenue</p>
+                    <button id="retryBtn" class="btn-retry">🔄 Réessayer</button>
+                </div>
+
+                <div id="weatherDisplay" class="weather-display hidden">
+                    <div class="weather-header">
+                        <div class="city-info">
+                            <h2 id="cityName">Ville</h2>
+                            <p id="country">Pays</p>
+                        </div>
+                        <div class="weather-icon">
+                            <img id="weatherIcon" src="" alt="Icône météo">
+                        </div>
+                    </div>
+
+                    <div class="weather-main">
+                        <div class="temperature">
+                            <span id="currentTemp">0</span>°C
+                        </div>
+                        <div class="weather-description">
+                            <p id="weatherDesc">Description</p>
+                            <p id="feelsLike">Ressenti : <span>0</span>°C</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <span class="detail-label">💨 Vent</span>
+                            <span id="windSpeed">0 km/h</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">💧 Humidité</span>
+                            <span id="humidity">0%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">👁️ Visibilité</span>
+                            <span id="visibility">0 km</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">🌡️ Pression</span>
+                            <span id="pressure">0 hPa</span>
+                        </div>
+                    </div>
+
+                    <div class="weather-footer">
+                        <p id="lastUpdate">Dernière mise à jour : <span></span></p>
+                    </div>
+                </div>
+
+                <!-- État initial -->
+                <div id="initialState" class="initial-state">
+                    <div class="welcome-icon">🌍</div>
+                    <h3>Bienvenue !</h3>
+                    <p>Recherchez une ville pour voir sa météo</p>
+                    <div class="example-cities">
+                        <p>Exemples :</p>
+                        <button class="city-example" data-city="Paris">Paris</button>
+                        <button class="city-example" data-city="Montreal">Montréal</button>
+                        <button class="city-example" data-city="Tokyo">Tokyo</button>
+                        <button class="city-example" data-city="New York">New York</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="footer-text">
+                Développé par Lamine • Données fournies par <a href="https://openweathermap.org" target="_blank">OpenWeather</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
