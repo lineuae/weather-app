@@ -320,9 +320,9 @@ function initApp() {
 // Démarrer l'application quand le DOM est chargé
 document.addEventListener('DOMContentLoaded', initApp);
 
-// ===== FONCTIONS DE DEBUG =====
+// ===== FONCTIONS UTILITAIRES =====
 
-// Rendre certaines fonctions disponibles globalement pour le debug
+// Exposition de fonctions pour tests et débogage
 window.debugWeatherApp = {
     searchWeather: (city) => searchWeather(city),
     showState: (state) => showState(state),

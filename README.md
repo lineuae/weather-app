@@ -124,7 +124,7 @@ Ce projet démontre :
 - **Expérience utilisateur** : Conception d'interface intuitive et responsive
 - **Code structuré** : Organisation claire et commentée du code
 
-## 📝 Notes de développeur débutant
+## 📝 Notes
 
 En tant que débutant, j'ai privilégié :
 
