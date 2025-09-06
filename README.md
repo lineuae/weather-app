@@ -57,7 +57,7 @@ Cette application permet de consulter la météo actuelle de n'importe quelle vi
 
 ### Utilisation
 1. **Rechercher une ville** : Tapez le nom et appuyez sur Entrée ou cliquez sur "Rechercher"
-2. **Utiliser les exemples** : Cliquez sur les boutons Paris, Montréal, Tokyo, New York
+2. **Utiliser les exemples** : Cliquez sur les boutons Paris, Montréal, Québec, Lévis
 3. **Voir les détails** : L'application affiche température, vent, humidité, etc.
 4. **Gérer les erreurs** : En cas d'erreur, utilisez le bouton "Réessayer"
 
